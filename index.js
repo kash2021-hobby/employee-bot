@@ -2,7 +2,7 @@ const { Telegraf, Markup } = require('telegraf');
 const axios = require('axios');
 require('dotenv').config();
 
-const bot = new Telegraf("process.env.BOT_TOKEN");
+const bot = new Telegraf(process.env.BOT_TOKEN);
 const API_BASE = "https://const-backend-1.onrender.com/api"; 
 
 let userState = {}; 
